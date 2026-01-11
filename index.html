@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surendra & Pradeepa - We're Getting Married!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="heart"></div>
+            <p>Loading our love story...</p>
+        </div>
+    </div>
+
+    <!-- Background Music Toggle -->
+    <div id="music-toggle" class="music-btn" title="Toggle Music">
+        <i class="fas fa-volume-mute"></i>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="audio/wedding-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">S & P</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#couple">Our Story</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="floating-hearts">
+            <div class="heart-float">💕</div>
+            <div class="heart-float">💖</div>
+            <div class="heart-float">💗</div>
+            <div class="heart-float">💕</div>
+            <div class="heart-float">💖</div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-subtitle animate-fade-in">We're Getting Married!</p>
+            <h1 class="hero-title">
+                <span class="name">Surendra</span>
+                <span class="ampersand">&</span>
+                <span class="name">Pradeepa</span>
+            </h1>
+            <p class="hero-verse">"What therefore God has joined together, let no man separate"<br><span class="verse-ref">- Mark 10:9</span></p>
+            <div class="hero-date">
+                <div class="date-ornament"></div>
+                <p>Friday, January 23, 2026</p>
+                <div class="date-ornament"></div>
+            </div>
+            <div class="hero-venue">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Fortune River Wood Resort, Dandeli</p>
+            </div>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-number">000</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-number">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-number">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-number">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <a href="#events" class="btn btn-primary hero-btn">
+                <i class="fas fa-heart"></i> View Events
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="couple" class="section couple-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Written in the Stars</span>
+                <h2 class="section-title">Our Beautiful Journey</h2>
+                <div class="title-decoration">
+                    <span></span>
+                    <i class="fas fa-heart"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="couple-intro">
+                <div class="couple-card bride animate-on-scroll">
+                    <div class="couple-image">
+                        <img src="images/bride.png" alt="Pradeepa" onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=500&fit=crop'">
+                        <div class="image-frame"></div>
+                    </div>
+                    <h3>Pradeepa</h3>
+                    <p class="couple-role">The Bride</p>
+                    <p class="couple-bio">A beautiful soul with grace and warmth. Her smile and kind heart won over everyone, and she is ready to start this new chapter of life with love and devotion.</p>
+                </div>
+                
+                <div class="couple-heart animate-on-scroll">
+                    <div class="heart-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+                
+                <div class="couple-card groom animate-on-scroll">
+                    <div class="couple-image">
+                        <img src="images/groom.jpg" alt="Surendra" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop'">
+                        <div class="image-frame"></div>
+                    </div>
+                    <h3>Surendra Babu Guram</h3>
+                    <p class="couple-role">The Groom</p>
+                    <p class="couple-bio">A dedicated and caring person with strong values and a loving heart. From their very first meeting, he knew that Pradeepa was the blessing he had been waiting for.</p>
+                </div>
+            </div>
+            
+            <!-- Timeline -->
+            <div class="timeline">
+                <h3 class="timeline-title">Our Journey Together</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item left animate-on-scroll">
+                        <div class="timeline-content">
+                            <div class="timeline-date">The Beginning</div>
+                            <h4>Families Connected</h4>
+                            <p>Our families found each other through a beautiful twist of fate. When our elders decided we might be a perfect match, little did we know our lives were about to change forever.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right animate-on-scroll">
+                        <div class="timeline-content">
+                            <div class="timeline-date">October 27, 2025</div>
+                            <h4>First Meeting</h4>
+                            <p>The moment we first met, there was an instant connection. Nervous smiles, hopeful hearts, and the feeling that this was meant to be. Our families watched with joy as we talked and laughed together.</p>
+                            <div class="timeline-image">
+                                <img src="images/first-meet.jpg" alt="First Meeting" onerror="this.src='https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=300&h=200&fit=crop'">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item left animate-on-scroll">
+                        <div class="timeline-content">
+                            <div class="timeline-date">Getting to Know</div>
+                            <h4>Growing Closer</h4>
+                            <p>Through phone calls, messages, and family gatherings, we discovered how perfectly we complement each other. Every conversation brought us closer, and we knew this was right.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item right animate-on-scroll">
+                        <div class="timeline-content">
+                            <div class="timeline-date">December 5, 2025</div>
+                            <h4>We Said Yes!</h4>
+                            <p>With blessings from both our families, we exchanged rings and made it official! Surrounded by loved ones, we celebrated the beginning of our beautiful journey together.</p>
+                            <div class="timeline-image">
+                                <img src="images/rings.jpg" alt="Engagement Rings" onerror="this.src='https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=300&h=200&fit=crop'">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item center animate-on-scroll">
+                        <div class="timeline-content final">
+                            <div class="timeline-date">January 23, 2026</div>
+                            <h4>Forever Begins</h4>
+                            <p>And now, we invite you to bless us as we begin our forever together!</p>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Save The Date</span>
+                <h2 class="section-title">Wedding Events</h2>
+                <div class="title-decoration">
+                    <span></span>
+                    <i class="fas fa-ring"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="events-grid">
+                <div class="event-card animate-on-scroll">
+                    <div class="event-icon">
+                        <i class="fas fa-cross"></i>
+                    </div>
+                    <h3>Wedding Ceremony</h3>
+                    <div class="event-details">
+                        <p><i class="far fa-calendar"></i> Friday, January 23, 2026</p>
+                        <p><i class="far fa-clock"></i> 9:00 AM - 12:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Fortune River Wood Resort</p>
+                        <p class="event-address">Dandeli, Karnataka, India</p>
+                    </div>
+                    <p class="event-description">Join us as we exchange our vows before God in a beautiful church ceremony surrounded by our loved ones.</p>
+                    <a href="https://maps.app.goo.gl/hBDLABAxZ9ThPSTHA" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+                
+                <div class="event-card featured animate-on-scroll">
+                    <div class="event-badge">Main Event</div>
+                    <div class="event-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Wedding Reception</h3>
+                    <div class="event-details">
+                        <p><i class="far fa-calendar"></i> Friday, January 23, 2026</p>
+                        <p><i class="far fa-clock"></i> 7:00 PM - 11:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Fortune River Wood Resort</p>
+                        <p class="event-address">Dandeli, Karnataka, India</p>
+                    </div>
+                    <p class="event-description">Celebrate with us at our reception featuring dinner, dancing, and lots of love!</p>
+                    <a href="https://maps.app.goo.gl/hBDLABAxZ9ThPSTHA" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+                
+                <div class="event-card animate-on-scroll">
+                    <div class="event-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Farewell Breakfast</h3>
+                    <div class="event-details">
+                        <p><i class="far fa-calendar"></i> Saturday, January 24, 2026</p>
+                        <p><i class="far fa-clock"></i> 8:00 AM - 11:00 AM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Fortune River Wood Resort</p>
+                        <p class="event-address">Dandeli, Karnataka, India</p>
+                    </div>
+                    <p class="event-description">Join us for a relaxed breakfast as we say our goodbyes and share memories from the celebration.</p>
+                    <a href="https://maps.app.goo.gl/hBDLABAxZ9ThPSTHA" target="_blank" class="btn btn-outline">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Map Section -->
+            <div class="venue-map animate-on-scroll">
+                <h3>Venue Location</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.8!2d74.6194!3d15.2437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf34c2a15fffff%3A0x123456789!2sFortune%20Resort%20Riverview%20Dandeli!5e0!3m2!1sen!2sin!4v1704888000000!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Captured Moments</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="title-decoration">
+                    <span></span>
+                    <i class="fas fa-camera"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="family">Family</button>
+                <button class="filter-btn" data-filter="engagement">Engagement</button>
+                <button class="filter-btn" data-filter="celebrations">Celebrations</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item family animate-on-scroll" data-category="family">
+                    <img src="images/groom.jpg" alt="Groom - Surendra">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>The Groom</span>
+                    </div>
+                </div>
+                <div class="gallery-item family animate-on-scroll" data-category="family">
+                    <img src="images/bride.png" alt="Bride - Pradeepa">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>The Bride</span>
+                    </div>
+                </div>
+                <div class="gallery-item engagement animate-on-scroll" data-category="engagement">
+                    <img src="images/first-meet.jpg" alt="First Meeting">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>First Meeting</span>
+                    </div>
+                </div>
+                <div class="gallery-item engagement animate-on-scroll" data-category="engagement">
+                    <img src="images/rings.jpg" alt="Engagement Rings">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>Engagement Rings</span>
+                    </div>
+                </div>
+                <div class="gallery-item engagement animate-on-scroll" data-category="engagement">
+                    <img src="images/WhatsApp Image 2025-12-06 at 8.36.57 PM.jpeg" alt="Engagement Collage">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>Engagement Day</span>
+                    </div>
+                </div>
+                <div class="gallery-item engagement animate-on-scroll" data-category="engagement">
+                    <img src="images/WhatsApp Image 2026-01-07 at 12.15.16 AM.jpeg" alt="Ring Ceremony">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>Ring Ceremony</span>
+                    </div>
+                </div>
+                <div class="gallery-item celebrations animate-on-scroll" data-category="celebrations">
+                    <img src="images/hero-bg.png" alt="Together Forever">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-heart"></i>
+                        <span>Together Forever</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="lightbox-content">
+                <img src="" alt="Gallery Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-decoration">
+                    <span></span>
+                    <i class="fas fa-phone"></i>
+                    <span></span>
+                </div>
+            </div>
+            
+            <div class="contact-info animate-on-scroll">
+                <h3>Have Questions?</h3>
+                <p>Feel free to reach out to us!</p>
+                <div class="contact-details">
+                    <a href="tel:+919845021790"><i class="fas fa-phone"></i> Moses RV: +91 98450 21790</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-hearts">
+                <span>💕</span>
+            </div>
+            <h2 class="footer-names">Surendra & Pradeepa</h2>
+            <p class="footer-date">January 23, 2026</p>
+            <p class="footer-hashtag">#SurendraPradeepaWedding</p>
+            <p class="footer-copyright">Made with <i class="fas fa-heart"></i> for our special day</p>
+        </div>
+        <button id="back-to-top" class="back-to-top" title="Back to Top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
